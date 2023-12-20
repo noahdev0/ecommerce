@@ -1,7 +1,7 @@
 import MaxWidthWraper from "@/components/MaxWidthWraper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import { ArrowDownToLine, CheckCircle, Leaf, Sofa } from "lucide-react";
 
 const perks = [
   {
@@ -30,8 +30,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl md:text-6xl">
             Your market place for high-quality
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-              {" "}
-              Meuble
+              Meuble <Sofa className=" text-green-600 inline-block" />
             </span>
           </h1>
           <p className="mt-5 text-lg max-w-prose text-muted-foreground sm:text-xl md:text-xl">
@@ -48,7 +47,7 @@ export default function Home() {
         {/* TODO */}
       </MaxWidthWraper>
       <section className="border-t border-gray-200 bg-gray-50">
-        <MaxWidthWraper>
+        <MaxWidthWraper classNme="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
             {perks.map((perk, i) => (
               <div
