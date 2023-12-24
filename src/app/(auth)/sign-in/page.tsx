@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 
 import { Icons } from "@/components/Icons";
@@ -176,3 +177,8 @@ const Page = () => {
 };
 
 export default Page;
+=======
+export default function page() {
+  return <div>page</div>;
+}
+>>>>>>> 06e90ffd9fdd0c4ffab1e8cb5be2590b7308aba8
